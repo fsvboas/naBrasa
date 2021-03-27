@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#banner {
+  height: 250px;
+  width: 970px;
+
+  display: flex;
+
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(164, 6, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 6, 0, 1) 0%,
+    rgba(195, 6, 0, 1) 100%
+  );
+
+  overflow: hidden;
+}
+
+/* FRAME 1 */
+#banner .frame:nth-child(1) {
+  display: flex;
+
+  align-items: center;
+
+  position: absolute;
+
+  margin-right: 150px;
+
+  opacity: 0;
+}
+
+.image:nth-child(1) {
+  margin-left: 148px;
+
+  animation-name: animationPhotos;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.image:nth-child(2) {
+  margin-left: -103px;
+
+  animation-name: animationPhotos;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.image:nth-child(3) {
+  margin-left: -103px;
+
+  animation-name: animationPhotos;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* FRAME 2 */
+#banner .frame:nth-child(2) {
+  display: flex;
+
+  align-items: center;
+
+  position: absolute;
+
+  opacity: 0;
+}
+
+#banner .frame:nth-child(2) .text {
+  width: 310px;
+  height: 166px;
+
+  margin-right: 80px;
+
+  animation-name: animationOtherFrames;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* FRAME 3 */
+#banner .frame:nth-child(3) {
+  display: flex;
+
+  align-items: center;
+
+  position: absolute;
+
+  opacity: 0;
+}
+
+#banner .frame:nth-child(3) .text {
+  height: 167px;
+  width: 361px;
+
+  margin-right: 60px;
+
+  animation-name: animationOtherFrames;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* ------------- */
+.logo {
+  height: 122px;
+  width: 407px;
+
+  animation-name: animationOtherFrames;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.selected {
+  opacity: 1 !important;
+}

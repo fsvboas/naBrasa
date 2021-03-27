@@ -1,0 +1,19 @@
+@keyframes animationPhotos {
+  from {
+    margin-bottom: 500px;
+  }
+
+  to {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes animationOtherFrames {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
